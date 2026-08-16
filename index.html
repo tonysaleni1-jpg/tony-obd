@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony OBD — Diagnose Your Car Like a Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Tony <span>OBD</span></a>
+      <nav>
+        <a href="#how-it-works">How it works</a>
+        <a href="#checks">The Checks</a>
+        <a href="#faq">FAQ</a>
+        <a href="#get-started" class="btn btn-sm">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">On-Board Diagnostics, made simple</p>
+        <h1>Check out your car<br />before it checks out on you.</h1>
+        <p class="sub">Learn how to run an OBD health check on your vehicle — read error codes, understand your engine, and spot trouble before it costs you a fortune.</p>
+        <div class="hero-actions">
+          <a href="#checks" class="btn">Start the check</a>
+          <a href="#faq" class="btn btn-ghost">Why OBD?</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="gauge" aria-hidden="true">
+          <svg viewBox="0 0 200 120">
+            <path class="gauge-track" d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke-width="14" stroke-linecap="round" />
+            <path class="gauge-fill" d="M20 100 A80 80 0 0 1 180 100" fill="none" stroke-width="14" stroke-linecap="round" />
+            <text class="gauge-value" x="100" y="88" text-anchor="middle">OK</text>
+            <text class="gauge-label" x="100" y="110" text-anchor="middle">ALL SYSTEMS NORMAL</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <h2>How an OBD scan works</h2>
+      <p class="section-sub">A tiny port in your car talks to your engine's computer. A $20 scanner gives you a mechanic's-eye view.</p>
+      <div class="cards">
+        <div class="card">
+          <span class="step">01</span>
+          <h3>Plug in</h3>
+          <p>Locate the OBD-II port — usually under the dashboard, near the steering column or pedals.</p>
+        </div>
+        <div class="card">
+          <span class="step">02</span>
+          <h3>Scan</h3>
+          <p>Connect the scanner and read the diagnostic trouble codes (DTCs) your engine has stored.</p>
+        </div>
+        <div class="card">
+          <span class="step">03</span>
+          <h3>Act</h3>
+          <p>Decode the codes, clear them safely, and decide: DIY fix, monitor, or visit a shop informed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="checks" class="section section-dark">
+      <h2>The 5-minute check</h2>
+      <p class="section-sub">What to look at every time you scan, even when there's no warning light.</p>
+      <div class="checks-grid">
+        <div class="check-item">
+          <h3>1. Check engine light</h3>
+          <p>A steady light needs attention; a flashing one means stop driving and get home.</p>
+        </div>
+        <div class="check-item">
+          <h3>2. Read the codes</h3>
+          <p>Pull the DTCs. P-codes are powertrain, B-codes are body, C-codes are chassis, U-codes are network.</p>
+        </div>
+        <div class="check-item">
+          <h3>3. Check readiness</h3>
+          <p>Emission monitors should be "ready" — not ready can mean recent repairs or a hidden issue.</p>
+        </div>
+        <div class="check-item">
+          <h3>4. Live data</h3>
+          <p>Watch coolant temp, RPM, and fuel trims while idling to spot sensors that are lying.</p>
+        </div>
+        <div class="check-item">
+          <h3>5. Clear &amp; verify</h3>
+          <p>After a fix, clear codes, drive a few cycles, and re-scan to confirm they don't return.</p>
+        </div>
+        <div class="check-item">
+          <h3>6. Keep a log</h3>
+          <p>Track codes and dates. Patterns — like a code that returns every 3 weeks — reveal root causes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>Quick answers</h2>
+      <p class="section-sub">The questions every driver asks before their first scan.</p>
+      <div class="faq-list">
+        <details>
+          <summary>Will scanning hurt my car?</summary>
+          <p>No. Reading codes is completely safe and doesn't change anything on the vehicle.</p>
+        </details>
+        <details>
+          <summary>Do I need an expensive scanner?</summary>
+          <p>No. A basic Bluetooth OBD-II adapter plus a free phone app covers 95% of what a DIYer needs.</p>
+        </details>
+        <details>
+          <summary>Where is the OBD port?</summary>
+          <p>Usually under the dash, within reach of the driver — near the steering column, fuse box, or pedals.</p>
+        </details>
+        <details>
+          <summary>Can I clear the codes myself?</summary>
+          <p>Yes, with a scanner — but only clear them after fixing the cause, or the light will just come back.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="get-started" class="section cta">
+      <h2>Ready to talk to your car?</h2>
+      <p>Grab an adapter, open a scanner app, and run your first check today. Your wallet will thank you later.</p>
+      <a href="#" class="btn btn-lg" onclick="window.print(); return false;">Print this guide</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Tony OBD — Driving with your eyes open.</p>
+    <p class="footer-note">Informational only. Always consult a certified mechanic for serious repairs.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
