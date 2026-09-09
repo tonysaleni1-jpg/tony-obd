@@ -1,0 +1,18 @@
+runtime: php82
+entrypoint: google-cloud-proxy
+
+env_variables:
+  APP_ENV: "production"
+  DB_SOCKETS: "/cloudsql/${GCP_PROJECT_ID}:us-central1:obd-db"
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+
+  - url: /(.*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot))$
+    static_files: \1
+    upload: .*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot)$
+
+  - url: /.*
+    script: auto
