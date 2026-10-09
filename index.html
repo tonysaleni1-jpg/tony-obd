@@ -3,8 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tony OBD — Diagnose Your Car Like a Pro</title>
+  <title>Tony OBD — How to Run an OBD-II Car Diagnostic Check</title>
+  <meta name="description" content="Learn how to run an OBD-II health check on your car: where the port is, how to read error codes and check readiness, and spot trouble before it costs you." />
+  <meta name="keywords" content="OBD-II, OBD scan, car diagnostic, check engine light, diagnostic trouble codes, DTC, car health check" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://obdstore.co.uk/" />
+  <meta property="og:url" content="https://obdstore.co.uk/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tony OBD — How to Run an OBD-II Car Diagnostic Check" />
+  <meta property="og:description" content="Run a full OBD-II health check on your car: read error codes, check readiness, and spot trouble before it costs you a fortune." />
+  <meta property="og:site_name" content="Tony OBD" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="https://obdstore.co.uk/" />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Tony OBD",
+        "description": "A plain-language guide to running OBD-II diagnostic checks on your car.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Will scanning hurt my car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Reading codes is completely safe and doesn't change anything on the vehicle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an expensive scanner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A basic Bluetooth OBD-II adapter plus a free phone app covers 95% of what a DIYer needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the OBD port?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually under the dash, within reach of the driver — near the steering column, fuse box, or pedals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I clear the codes myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, with a scanner — but only clear them after fixing the cause, or the light will just come back."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe to drive with the check engine light on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If the light is steady and the car runs fine, you can usually drive to get it checked — but if it's flashing, stop as soon as it's safe and get it towed or fixed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often should I run an OBD scan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Once a month is a good habit, plus a scan before long trips or buying a used car. Catching codes early is far cheaper than repair shop surprises."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="nav">
@@ -13,6 +90,7 @@
       <nav>
         <a href="#how-it-works">How it works</a>
         <a href="#checks">The Checks</a>
+        <a href="#codes">Common Codes</a>
         <a href="#faq">FAQ</a>
         <a href="#get-started" class="btn btn-sm">Get Started</a>
       </nav>
@@ -95,6 +173,37 @@
       </div>
     </section>
 
+    <section id="codes" class="section section-dark">
+      <h2>Most common OBD-II codes, explained</h2>
+      <p class="section-sub">The codes DIYers run into most, and what they actually mean in plain English.</p>
+      <div class="checks-grid">
+        <div class="check-item">
+          <h3>P0300 — Random misfire</h3>
+          <p>The engine is misfiring on different cylinders. Common causes: worn spark plugs, bad ignition coils, or a vacuum leak.</p>
+        </div>
+        <div class="check-item">
+          <h3>P0420 — Catalyst efficiency low</h3>
+          <p>The catalytic converter is working below par. Often an aged converter, but sometimes a lazy oxygen sensor instead.</p>
+        </div>
+        <div class="check-item">
+          <h3>P0171 — System too lean</h3>
+          <p>The engine is getting too much air or not enough fuel. Clogged fuel filter, dirty MAF sensor, or an air leak are typical causes.</p>
+        </div>
+        <div class="check-item">
+          <h3>P0442 — Small EVAP leak</h3>
+          <p>A small fuel-vapor leak in the emissions system. Loose or cracked gas cap is the #1 fix — tighten it first.</p>
+        </div>
+        <div class="check-item">
+          <h3>P0455 — Large EVAP leak</h3>
+          <p>A big fuel-vapor leak detected. Check the gas cap, then the hoses and canister for damage.</p>
+        </div>
+        <div class="check-item">
+          <h3>P0128 — Low coolant temperature</h3>
+          <p>The engine never reaches normal operating temperature. A stuck-open thermostat is the usual suspect.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="faq" class="section">
       <h2>Quick answers</h2>
       <p class="section-sub">The questions every driver asks before their first scan.</p>
@@ -114,6 +223,14 @@
         <details>
           <summary>Can I clear the codes myself?</summary>
           <p>Yes, with a scanner — but only clear them after fixing the cause, or the light will just come back.</p>
+        </details>
+        <details>
+          <summary>Is it safe to drive with the check engine light on?</summary>
+          <p>If the light is steady and the car runs fine, you can usually drive to get it checked — but if it's flashing, stop as soon as it's safe and get it towed or fixed.</p>
+        </details>
+        <details>
+          <summary>How often should I run an OBD scan?</summary>
+          <p>Once a month is a good habit, plus a scan before long trips or buying a used car. Catching codes early is far cheaper than repair shop surprises.</p>
         </details>
       </div>
     </section>

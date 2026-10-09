@@ -1,6 +1,9 @@
 runtime: php82
 entrypoint: google-cloud-proxy
 
+automatic_scaling:
+  max_instances: 5
+
 env_variables:
   APP_ENV: "production"
   DB_SOCKETS: "/cloudsql/${GCP_PROJECT_ID}:us-central1:obd-db"
@@ -10,9 +13,22 @@ handlers:
     static_files: index.html
     upload: index.html
 
+  - url: /robots.txt
+    static_files: robots.txt
+    upload: robots.txt
+
+  - url: /sitemap.xml
+    static_files: sitemap.xml
+    upload: sitemap.xml
+
+  - url: /seo-preview.html
+    static_files: seo-preview.html
+    upload: seo-preview.html
+
   - url: /(.*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot))$
     static_files: \1
     upload: .*\.(css|js|png|jpg|gif|ico|svg|woff|woff2|ttf|eot)$
+    expiration: 7d
 
   - url: /.*
     script: auto
